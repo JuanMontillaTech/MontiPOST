@@ -1,0 +1,9 @@
+Find Existing .exe file 
+-\POS_Source_Code\POS__SQLite\supershop\bin\x86\Debug  
+and click  Adv_POS.exe  icon
+
+
+
+Learn how to
+How to make a installer or a setup file from the source code
+https://www.youtube.com/watch?v=4ca8HPnY8hE

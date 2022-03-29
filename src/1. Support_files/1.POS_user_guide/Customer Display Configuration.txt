@@ -1,0 +1,19 @@
+How to setup Customer Display 
+=====================================
+Step1: Open SalesRegister/SalesRegister.cs file with Visual studio 2010 
+Step2: Add this code after line 557 or UnComment/Open  Existing code -- find in vatcal() method line 535
+ 
+			///////Pole shows Price value  | if you have pole device please UnComment   below code 
+	     
+			SerialPort sp = new SerialPort();
+			sp.PortName = "COM1";  ////Insert your pole Device Port Name E.g. COM4 -- you can find  from pole device manual  
+			sp.BaudRate = 9600;     // Pole Bound Rate 
+			sp.Parity = Parity.None;
+			sp.DataBits = 8;   // Data Bits
+			sp.StopBits = StopBits.One;
+			sp.Open();                 
+			sp.WriteLine(lblTotalPayable.Text);
+
+			sp.Close();
+			sp.Dispose();
+			sp = null;

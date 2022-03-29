@@ -1,0 +1,38 @@
+1. Install Reportviewer_10_0_303.exe  for VS 2012 to upto  \1. Support_files\ReportViewer_Error_solution folder.
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=6442
+or
+Reportviewer_09_0_303.exe for VS 2008 to 2010
+https://download.microsoft.com/download/E/A/1/EA1BF9E8-D164-4354-8959-F96843DD8F46/ReportViewer.exe
+
+2. Open visual studio and run
+https://www.youtube.com/watch?v=AcOoGkG0m8I - follow video How to open project
+
+
+
+Details more setup instruction please check 
+	-\POS_Source_Code\POS_SQL\1.How to config SQL Database into SQL Server 2008.docx
+	-\POS_Source_Code\POS_MySql\2.How to config MySQL Script into phpmyadmin - Final_Review.docx
+
+
+
+To change multi lingual . bilingual you should try 
+https://www.codeproject.com/Tips/580043/How-to-make-a-multi-language-application-in-Csharp
+
+Contact
+=========
+For Support, Please email me directly at 
+citkar@live.com
+Response time is 
+Monday to Friday 
+12:00 PM to 8:00 PM EST - GMT -6 
+5:00 PM to 1:00 AM GMT 
+
+Please mention those information's 
+Envato user name:
+Purchase Date: 	 
+Invoice No: 	 
+Order No:  
+
+or if you Leave a message on messages section you don't need to mention above info
+https://codecanyon.net/user/dynamicsoft
+ 

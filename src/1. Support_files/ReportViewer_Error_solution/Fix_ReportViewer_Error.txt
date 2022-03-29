@@ -1,0 +1,36 @@
+Error Message:
+ "The type or namespace name 'Reporting' does not exist in the namespace 'Microsoft'"
+ 
+Please close your VS 2010.
+And Install Reportviewer_10_0_303.exe from \1. Support_files\ReportViewer_Error_solution folder.
+And open  Vs 2010 and Run project.
+
+Still Error
+==================
+To  remove the error 
+1. Add a new form
+2. Toolbox ->Reporting - >  Drag ReportViewer control and Drop on new form. 
+and Save then Press Run (Press F5)
+
+Still error
+===============
+	Open SalesRegister > POSPrintRpt.cs  file
+	Remove reportViewer1 
+	Drag and drop a new reportViewer1 from toolbox reporting tab
+in Reportviewer
+1.       Select Choose Report -> supershop.SalesRegister.RptPOS.rdlc
+2.       Choose Data Sources Instance -> pOSPrintPageBindSource
+3.       OK -> Run
+
+MICROSOFT REPORT VIEWER 2012 RUNTIME
+https://download.microsoft.com/download/F/B/7/FB728406-A1EE-4AB5-9C56-74EB8BDDF2FF/ReportViewer.msi
+
+OR
+
+Reportviewer_10_0_303.exe  for VS 2012 to upto
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=6442
+
+OR
+
+Reportviewer_09_0_303.exe fo VS 2008 to 2010
+https://download.microsoft.com/download/E/A/1/EA1BF9E8-D164-4354-8959-F96843DD8F46/ReportViewer.exe

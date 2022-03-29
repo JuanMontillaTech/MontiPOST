@@ -1,0 +1,282 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Advanced Point of Sale - POS</title>
+	
+	<meta name="description" content="Advanced Point of Sale - POS is C#  based Desktop application. 
+This is suitable for small and medium businesses/organization specially SuperShop, Restaurants. It is Very Usefull for Supershop management.">
+	<meta name="author" content="DynamicSoft">
+	<meta name="copyright" content="DynamicSoft">	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-point-of-sale">
+	<div id="documenter_sidebar"> 
+		<img src="../../POS_Source_Code/POS__SQLite/supershop/res/Dsoft_ProfileFont.png"   height="120">
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#home" title="Home">Home</a></li>
+			<li><a href="#Setup" title="Setup">How to Make a Setup file </a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#pole" title="pole">Pole/Customer Display Config</a></li>
+			<li><a href="#config" title="Config">Config</a></li>
+			<li><a href="#add_item" title="Add item">Add item</a></li>
+			<li><a href="#item_list" title="item list">Item list</a></li>			 
+			<li><a href="#sales_register" title="Sales Register">Sales Register</a></li>
+			<li><a href="#receipt_1" title="receipt-1">Payment</a></li>
+			<li><a href="#receipt_pirnt" title="Receipt-pirnt">Receipt-pirnt</a></li>
+			<li><a href="#sales_report" title="Sales report">Sales Report</a></li>			 
+			<li><a href="#usermanage" title="UserManage">User Manage</a></li>
+			<li><a href="#ConnectionString" title="ConnectionString">ConnectionString</a></li>
+			<li><a href="#Error" title="Compile Error">Compile Error</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright DynamicSoft 2013 - 2021
+	 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Advanced Point of Sale - POS</h1>	 
+	<div id="documenter_buttons">
+	
+		<a href="http://codecanyon.net/downloads" class="btn btn-info btn-large"> Rate us </a> 
+		<a href="https://www.youtube.com/watch?v=xCERQqtBPYk" class="btn btn-primary btn-large">POS Live Preview</a> 
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 02 Dec, 2013</li>
+	<li>Latest update: 02 April, 2021</li>
+	<li>By: <a href="https://codecanyon.net/user/dynamicsoft"> DynamicSoft </a></li>
+	
+	<li>Support email: <a href="mailto:&#99;&#105;&#116;&#107;&#97;&#114;&#64;&#108;&#105;&#118;&#101;&#46;&#99;&#111;&#109;">&#99;&#105;&#116;&#107;&#97;&#114;&#64;&#108;&#105;&#118;&#101;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p> <a href="https://www.youtube.com/watch?v=g91NRvQBRms" class="btn btn-primary btn-large"> Developer's Edition Video  </a>  | 
+	<a href="https://www.youtube.com/watch?v=8teU_XmEXlA" class="btn btn-primary btn-large"> User manual - Video  </a> </p>
+	<h4>Support</h4>	
+	Email us for support <a href="mailto:citkar@live.com"> citkar@live.com</a> <br/>
+	Response time is  <br/>
+	Monday to Friday <br/>
+	12:00 PM to 8:00 PM EST (GMT -6 ) <br/>
+	5:00 PM to 1:00 AM GMT <br/> <br/>
+	<b>Please mention those informations</b> First time contact <br/> 
+	Envato account User name: <br/>
+	Purchase Date: 	 <br/>
+	Invoice No: 	<br/> 
+	Order No: <br/><br/>
+	or if you Leave a message on messages section you don't need to mention avobe info  <br/>
+	<a href="https://codecanyon.net/user/dynamicsoft"> https://codecanyon.net/user/dynamicsoft </a>
+	</section>
+	
+	<section id="home">
+	<div class="page-header"><h3>Home</h3><hr class="notop"></div>
+		<p>
+		<img alt="" src="assets/images/image_1.jpg" ></p>
+	</section>
+	<section id="Setup">
+		<div class="page-header"><h3>How to make a installer or a setup file from the source code</h3><hr class="notop"></div>
+		<a href="https://www.youtube.com/watch?v=4ca8HPnY8hE" target="_blank"><h2>Video Tutorial </h2> </a><br/>
+			 
+			Manual Process <br/>
+			=================== <br/>
+			If you need for client  <br/>
+			Please Copy whole \POS__SQLite\supershop\bin\x86\ --> <b>Debug </b> folder and make a shortcut of Adv_POS.exe file -- not this one (Adv_POS.exe.config) <br/>
+			paste to desktop or anywhere where do you want.  <br/>
+			and make zip file 
+	</section>
+
+	<section id="installation">
+		<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+	<p>
+		<strong>Requirement</strong></p>
+	<hr>
+	<ul>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=24872" > .NET Frameworks4.0&nbsp; (if you don&#39;t have) </a></li>
+		<li><a href="../ReportViewer_Error_solution/Reportviewer_10_0_303.exe" > Reportviewer_10_0_303.exe  for VS 2012 to upto</a></li>
+		<li><a href="../ReportViewer_Error_solution/ReportViewer_9_0_21.exe" > ReportViewer_9_0_21.exe fo VS 2008 to 2010 </a></li>
+		<li><a href="../POS_For_Chart_Error_Solution/MSChart.exe" >  MSChart.exe </a></li>		
+		<li> <a href="https://system.data.sqlite.org/downloads/1.0.107.0/sqlite-netFx40-static-binary-bundle-Win32-2010-1.0.107.0.zip"> Install SQLite connector-net  </a>   </li>		
+		<li> <a href="http://ftp.ntu.edu.tw/MySQL/Downloads/Connector-Net/mysql-connector-net-6.9.9.msi"> Install mysql-connector-net  </a>  [Only for MySQL]</li>		
+	</ul>
+ 
+	</section>
+<section id="pole">
+	<div class="page-header"><h3>Customer Display Configuration </h3><hr class="notop"></div>
+	Step1: Open SalesRegister/SalesRegister.cs file with Visual studio 2010 <br/>
+	Step2:  Add this code  after line 558 or    UnComment Existing code -- find in vatcal() method  line 535 <br/>
+		<pre> 
+			///////Pole shows Price value  | if you have pole device please UnComment   below code <br/>	     
+			SerialPort sp = new SerialPort();
+			sp.PortName = "COM1";  ////Insert your pole Device Port Name E.g. COM4 -- you can find  from pole device manual  
+			sp.BaudRate = 9600;     // Pole Bound Rate 
+			sp.Parity = Parity.None;
+			sp.DataBits = 8;   // Data Bits
+			sp.StopBits = StopBits.One;
+			sp.Open();                 
+			sp.WriteLine(lblTotalPayable.Text);
+
+			sp.Close();
+			sp.Dispose();
+			sp = null;
+		</pre>
+</section>
+<section id="config">
+	<div class="page-header"><h3>Config</h3><hr class="notop"></div>
+<p>
+	<img alt="" src="assets/images/image_2.jpg" ></p>
+</section>
+<section id="add_item">
+	<div class="page-header"><h3>Add item</h3><hr class="notop"></div>
+<p>
+	 <img alt="" src="assets/images/image_3.jpg"  ></p>
+</section>
+<section id="item_list">
+	<div class="page-header"><h3>item list</h3><hr class="notop"></div>
+<p>
+	 <img alt="" src="assets/images/image_4.jpg"  ></p>
+</section>
+ 
+<section id="sales_register">
+	<div class="page-header"><h3>Sales Register</h3><hr class="notop"></div>
+<p>
+	<img alt="" src="assets/images/image_6.jpg"  ></p>
+</section>
+<section id="receipt_1">
+	<div class="page-header"><h3>Payment receiver tab</h3><hr class="notop"></div>
+<p>
+	<img alt="" src="assets/images/image_7.jpg"  ></p>
+</section>
+<section id="receipt_pirnt">
+	<div class="page-header"><h3>Receipt-pirnt</h3><hr class="notop"></div>
+<p>
+	<img alt="" src="assets/images/image_8.jpg"  ></p>
+</section>
+<section id="sales_report">
+	<div class="page-header"><h3>Sales report</h3><hr class="notop"></div>
+<p>
+	<img alt="" src="assets/images/image_9.jpg"  ></p>
+</section>
+ 
+<section id="usermanage">
+	<div class="page-header"><h3>Manage User</h3><hr class="notop"></div>
+<p>
+	 <img alt="" src="assets/images/image_11.jpg"  ></p>
+</section>
+<section id="ConnectionString">
+	<div class="page-header"><h3>ConnectionString</h3><hr class="notop"></div>
+<p>
+To open => solution explorer alt + ENTER => right click on Adv_POS => click properties => Settings tab <br/><br/>
+	 <img alt="" src="../../POS_Source_Code/POS__SQLite/ConnectionString.jpg"  ></p> <br/>
+
+	<b>//Its absolute Connection String for MS SQL Server 2008 - Upto  -- Internal connectionstring - u can't change Data source info after compile/Debug </b> <br/>
+	static string _ConnectionString = "Data Source=(local);Initial Catalog=APOSDB; User ID=sa;Password=sapass123!";  <br/>  <br/>
+	    
+					//"Data Source= (local) /or .\\SQLEXPRESS or your DB IP address or your SQL server name; for External database use only single dot  .\SQLEXPRESS or Data Source=.       --//(only dot) <br/>
+					//Initial Catalog= Database Name; <br/>
+					//User ID= DB User ID; <br/>
+					//Password= DB user password"; <br/><br/>
+	    
+	<b>//If your MSSQL server have window authentication (MSSQL server 2008 open without Password) please use this one </b> <br/>
+	 static string _ConnectionString = "Data Source=(local); Initial Catalog=APOSDB; "; <br/> <br/>
+
+	<b>// Connection String for  SQlite Edition </b><br/>
+	static string _ConnectionString = @"Data Source=psodb.db;Version=3;New=False;Compress=True"; <br/> <br/>
+							 
+	    
+	<b>//This is Mysql Database Access  class -- leave empty if your Mysal does not has PASSWORD  </b>      <br/>
+	  static string _ConnectionString = "server=localhost; database=aposmysqldb; uid=root; PASSWORD="; <br/><br/>
+	  
+	  	 
+	<b>// FOR SQL -  Use for Adv_POS.exe.config file - External connectionstring - you can change Database server info after compile/Debug </b> <br/>
+	  static string _ConnectionString = supershop.Properties.Settings.Default.APOSSQLConnectionString;<br/> <br/>
+	  
+	  	 
+	<b>// FOR MYSQL - Use for Adv_POS.exe.config file - External connectionstring - you can change Database server info after compile/Debug </b> <br/>
+	  static string _ConnectionString = supershop.Properties.Settings.Default.AposMysqlConnectionString;<br/> <br/>
+	  
+	  	 
+	<b>// FOR SQLite -  Use for Adv_POS.exe.config file - External connectionstring - you can change Database server info after compile/Debug  </b><br/>
+	  static string _ConnectionString = supershop.Properties.Settings.Default.psodbConnectionString1;<br/> <br/>
+	  
+	N:B:  if use use external connectionstring you have to change also in your app.config file  or follow avobe image<br/> 	
+	    "add name="supershop.Properties.Settings.APOSSQLConnectionString"  connectionString="Data Source=(local); Initial Catalog=APOSDB; User ID=sa;Password=sapass123!;"      providerName="Sql.Data.MySqlClient" /"
+	<br/><br/> <br/> 
+	<b>Please check video tutorial  </b><br/> 
+	<p><a href="https://www.youtube.com/watch?v=g91NRvQBRms&t=2034s" class="btn btn-primary btn-large"> Connectionstring miscellaneous - 33:54   </a>  </p> 
+	
+	<p><a href="https://www.youtube.com/watch?v=g91NRvQBRms&t=2177s" class="btn btn-primary btn-large"> How to change External connectionstring - 36:17 </a>  </p><br/>
+	 
+	
+</section>
+ 
+
+<section id="Error">
+	<div class="page-header"><h3>Compile Error</h3><hr class="notop"></div>
+<p>1. Please install "<a href="../POS_For_Chart_Error_Solution/MSChart.exe" >  MSChart.exe </a>" File  <br/>
+2. Open your Project   <br/>
+3. Solution Explorer -> Right Click on References Folder Select Add Reference   <br/>
+   And add - > System.windows.Forms.DataVisualization. <br/>
+    or  Follow Image 1.jpg and 2.jpg  </p>
+<p>	 <img alt="" src="../POS_For_Chart_Error_Solution/1.jpg"  ></p>
+<p>	 <img alt="" src="../POS_For_Chart_Error_Solution/2.jpg"  ></p>
+
+<b> Install reporviewer.exe </b>
+</section>
+
+	</div>
+</body>
+</html>

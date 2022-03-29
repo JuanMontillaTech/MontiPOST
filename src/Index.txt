@@ -1,0 +1,33 @@
+1.Support_files
+	1.POS_user_guide 
+	2. Font- Barcode	
+	3.POS_for_chart_Error_Solution
+	4.ReportViewer_error_solution
+2.POS_Source_Code
+	1.POS_SQLite
+		supershop [source files folder]
+		Adv_POS.sln [Solution file - Open the project]
+	2.POS_SQL
+		1. How to config SQL Database into SQL Server 2008.doc [user configuration guide//Documentation]
+		2. APOSDB.sql [SQL server Database Script]
+		3. DataAccess_MSSQLServer.cs [Use in configuration]
+		4. DataAccess_SQLiteEdition.cs [Use in configuration]
+	3.POS_MySQL
+		1. How to config MySQL Script into phpmyadmin [user configuration guide/Documentation]
+		2. aposmysqldb.sql [MySQL server Database Script]
+		3. DataAccess_MySql.cs [Mysql DB script]
+		4. DataAccess_MSSQLServer.cs [Use in configuration]
+		5. DataAccess_SQLiteEdition.cs [Use in configuration]
+
+
+Official User Guide - Developer edition video tutorial
+=====================================================
+https://www.youtube.com/watch?v=g91NRvQBRms
+
+
+How To Automatically Open Your Cash Drawer
+https://www.youtube.com/watch?v=ECid5KGzuzw
+
+Setting Up Your New POS System
+https://www.youtube.com/watch?v=OAK0GCd7fUE
+

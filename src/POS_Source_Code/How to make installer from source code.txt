@@ -1,0 +1,23 @@
+How to make installer from source code
+=============================================
+
+Step 1: Please create a new project.(Do not create installer file/project in same project.)
+
+Our Official Video tutorial
+https://www.youtube.com/watch?v=4ca8HPnY8hE
+ 
+
+Manual Process
+===================
+If you need for client 
+Please Copy whole  \POS__SQLite\supershop\bin\x86\  --> Debug folder and make a shortcut of  Adv_POS.exe  file  -- not this one (Adv_POS.exe.config)
+paste to desktop or anywhere where do you want. 
+
+and make zip file 
+
+
+
+Do not create installer file/project in same project.
+Do not install setup.exe into C drive 
+
+
