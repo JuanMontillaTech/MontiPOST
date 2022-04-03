@@ -74,7 +74,7 @@ namespace supershop
             {
                 chkkitchenDisplay.Checked = false;
             }
-            lblbuyqty1.Text = "Buy 1 item: " + txtdiscount.Text + " % off ";
+            lblbuyqty1.Text = "Compra 1 artículo: " + txtdiscount.Text + " % off ";
 
             DataTable dtdisvl = databindsvalues.multiplediscountsvl(dt1.Rows[0].ItemArray[0].ToString());
             DataRow reader = dtdisvl.Rows[0];
@@ -115,7 +115,7 @@ namespace supershop
                 DataTable dtCust = DataAccess.GetDataTable(sqlCust);
                 cmbSupplier.DataSource = dtCust;
                 cmbSupplier.DisplayMember = "Name";
-                cmbSupplier.Text = "Unknown";
+                cmbSupplier.Text = "Desconocido";
 
                 //Category list
                 string sqlcate = "select DISTINCT   category_name from tbl_category";
@@ -400,7 +400,7 @@ namespace supershop
                     }
                     catch (Exception exp)
                     {
-                        MessageBox.Show("Sorry\r\n You have to Check the Data" + exp.Message);
+                        MessageBox.Show("Lo siento\r\n Tienes que comprobar los datos" + exp.Message);
                     }
                 }
             }
@@ -574,7 +574,7 @@ namespace supershop
                 if (dtitemcode.Rows.Count > 0)
                 {
                     lblValidmsg.ForeColor = System.Drawing.Color.Red;
-                    lblValidmsg.Text = "Duplicate item code";                    
+                    lblValidmsg.Text = "Código de artículo duplicado";                    
                     if (lblItemcode.Text == "-")
                     {
                         MessageBox.Show("Advertencia: Código de artículo duplicado \n Código de artículo ya utilizado para otro producto", "Advertencia ", MessageBoxButtons.OK, MessageBoxIcon.Warning);

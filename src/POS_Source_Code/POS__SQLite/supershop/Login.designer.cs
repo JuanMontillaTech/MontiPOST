@@ -78,7 +78,7 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(198, 32);
             this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "Ingresar";
             this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -118,11 +118,11 @@
             this.label4.BackColor = System.Drawing.SystemColors.Window;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(193, 337);
+            this.label4.Location = new System.Drawing.Point(68, 283);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 24);
+            this.label4.Size = new System.Drawing.Size(206, 96);
             this.label4.TabIndex = 10;
-            this.label4.Text = "POS System";
+            this.label4.Text = "POS System\r\nJuan Montilla\r\n829-308-7380\r\nwww.montillasoft.com\r\n";
             // 
             // progressBar1
             // 
@@ -144,7 +144,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.Window;
             this.label9.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.label9.Location = new System.Drawing.Point(308, 339);
+            this.label9.Location = new System.Drawing.Point(280, 363);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 16);
             this.label9.TabIndex = 16;
@@ -167,9 +167,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.label1.Location = new System.Drawing.Point(541, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 18);
+            this.label1.Size = new System.Drawing.Size(52, 18);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Username";
+            this.label1.Text = "Usuario";
             // 
             // label2
             // 
@@ -178,16 +178,16 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.label2.Location = new System.Drawing.Point(541, 199);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.Size = new System.Drawing.Size(40, 18);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Password";
+            this.label2.Text = "Clave";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(129, 74);
+            this.pictureBox2.Location = new System.Drawing.Point(27, 115);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(259, 260);
+            this.pictureBox2.Size = new System.Drawing.Size(457, 119);
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 

@@ -40,13 +40,13 @@ namespace supershop
             if (txtUserName.Text == "")
             {
                 //MessageBox.Show("");
-                MessageBox.Show("Please insert User Name", "Not match", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, inserte el nombre de usuario", "No coincide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUserName.Focus();
                 
             }
             else if ( txtPassword.Text == "")
             {
-                MessageBox.Show("Please  insert Password", "Not match", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, inserte el nombre de clave", "No coincide", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPassword.Focus();               
             }
             else
@@ -99,14 +99,14 @@ namespace supershop
                         if (usertype == "0") // Block user
                         {
 
-                            MessageBox.Show("\n This user (" + txtUserName.Text + ") has been blocked. \n Please contact to administrator.", "Block - Inactive", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            MessageBox.Show("\n Este usuario (" + txtUserName.Text + ") ha sido bloqueado. \n Por favor, póngase en contacto con el administrador.", "Bloque - Inactivo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                         }
                     }
                     else
                     {
                        // MessageBox.Show("Username or Password not match", "Not match", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                         lblmsg.Visible = true;
-                        lblmsg.Text = "Username or Password does not match";
+                        lblmsg.Text = "El nombre de usuario o la contraseña no coinciden";
 
                     }
                 }
@@ -116,7 +116,7 @@ namespace supershop
                    // MessageBox.Show("User ID not exist   \n\n " + exe.Message, "Not match", MessageBoxButtons.OK, MessageBoxIcon.Error);
                    // MessageBox.Show("User ID or Password not match", "Not match", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     lblmsg.Visible = true;
-                    lblmsg.Text = "Username or Password does not match";
+                    lblmsg.Text = "El nombre de usuario o la contraseña no coinciden";
 
                 }
               
@@ -201,7 +201,7 @@ namespace supershop
                 lblmsg.Visible = true;
                 label1.Visible = false;
                 label2.Visible = false;
-                lblmsg.Text = "Your license has been expired.\n Contact: dynamicsoftorg@gmail.com";   
+                lblmsg.Text = "Su licencia ha caducado.\n Contacto: ing.juan.montilla@gmail.com";   
                 btnLogin.Visible = false;
                 btnReset.Visible = false;
                 txtUserName.Visible = false;
