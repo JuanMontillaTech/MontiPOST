@@ -104,9 +104,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(221, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 20);
+            this.label3.Size = new System.Drawing.Size(229, 20);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Product Quantity (Qty) *";
+            this.label3.Text = "Producto Cantidad (Cantidad) *";
             // 
             // label2
             // 
@@ -115,9 +115,9 @@
             this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label2.Location = new System.Drawing.Point(222, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 16);
+            this.label2.Size = new System.Drawing.Size(143, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Product Name *";
+            this.label2.Text = "Nombre del producto *";
             // 
             // label1
             // 
@@ -127,9 +127,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(219, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 24);
+            this.label1.Size = new System.Drawing.Size(190, 24);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Product Code *";
+            this.label1.Text = "Código de producto *";
             this.toolTip1.SetToolTip(this.label1, "Bar Code or unique code");
             // 
             // txtProductCode
@@ -189,7 +189,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(208, 27);
             this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "  Save";
+            this.btnSave.Text = "  Guardar";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip1.SetToolTip(this.btnSave, "Submit to Store");
             this.btnSave.UseVisualStyleBackColor = false;
@@ -212,9 +212,9 @@
             this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label7.Location = new System.Drawing.Point(221, 243);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 16);
+            this.label7.Size = new System.Drawing.Size(110, 16);
             this.label7.TabIndex = 29;
-            this.label7.Text = "Cost Price *";
+            this.label7.Text = "Precio de coste *";
             // 
             // label8
             // 
@@ -223,9 +223,9 @@
             this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label8.Location = new System.Drawing.Point(220, 291);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 16);
+            this.label8.Size = new System.Drawing.Size(110, 16);
             this.label8.TabIndex = 28;
-            this.label8.Text = "Sale Price *";
+            this.label8.Text = "Precio de venta *";
             // 
             // label4
             // 
@@ -234,9 +234,9 @@
             this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label4.Location = new System.Drawing.Point(472, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 16);
+            this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 33;
-            this.label4.Text = "Category *";
+            this.label4.Text = "Categoría *";
             // 
             // label5
             // 
@@ -245,9 +245,9 @@
             this.label5.ForeColor = System.Drawing.Color.Maroon;
             this.label5.Location = new System.Drawing.Point(472, 204);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 32;
-            this.label5.Text = "Supplier *";
+            this.label5.Text = "Proveedor *";
             // 
             // toolTip1
             // 
@@ -328,9 +328,9 @@
             this.chktaxapply.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.chktaxapply.Location = new System.Drawing.Point(631, 79);
             this.chktaxapply.Name = "chktaxapply";
-            this.chktaxapply.Size = new System.Drawing.Size(51, 21);
+            this.chktaxapply.Size = new System.Drawing.Size(39, 21);
             this.chktaxapply.TabIndex = 72;
-            this.chktaxapply.Text = "Yes";
+            this.chktaxapply.Text = "Si";
             this.toolTip1.SetToolTip(this.chktaxapply, "IF Tax Apply Checked it\r\nElse UnChecked.\r\n\r\nWhen you Checked, Tax will be apply f" +
         "or this item.\r\nYou can only change tax rate from settings page.");
             this.chktaxapply.UseVisualStyleBackColor = true;
@@ -343,10 +343,10 @@
             this.lnkDelete.LinkColor = System.Drawing.Color.Red;
             this.lnkDelete.Location = new System.Drawing.Point(14, 321);
             this.lnkDelete.Name = "lnkDelete";
-            this.lnkDelete.Size = new System.Drawing.Size(48, 16);
+            this.lnkDelete.Size = new System.Drawing.Size(56, 16);
             this.lnkDelete.TabIndex = 4;
             this.lnkDelete.TabStop = true;
-            this.lnkDelete.Text = "Delete";
+            this.lnkDelete.Text = "Eliminar";
             this.toolTip1.SetToolTip(this.lnkDelete, "Delete this item from database");
             this.lnkDelete.Visible = false;
             this.lnkDelete.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkDelete_LinkClicked);
@@ -357,9 +357,9 @@
             this.chkkitchenDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.chkkitchenDisplay.Location = new System.Drawing.Point(631, 256);
             this.chkkitchenDisplay.Name = "chkkitchenDisplay";
-            this.chkkitchenDisplay.Size = new System.Drawing.Size(51, 21);
+            this.chkkitchenDisplay.Size = new System.Drawing.Size(39, 21);
             this.chkkitchenDisplay.TabIndex = 73;
-            this.chkkitchenDisplay.Text = "Yes";
+            this.chkkitchenDisplay.Text = "Si";
             this.toolTip1.SetToolTip(this.chkkitchenDisplay, "Kitchen Display for \r\nRestaurent Item");
             this.chkkitchenDisplay.UseVisualStyleBackColor = true;
             // 
@@ -370,9 +370,9 @@
             this.label12.ForeColor = System.Drawing.Color.Maroon;
             this.label12.Location = new System.Drawing.Point(473, 261);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 13);
+            this.label12.Size = new System.Drawing.Size(95, 13);
             this.label12.TabIndex = 74;
-            this.label12.Text = "Kitchen Display";
+            this.label12.Text = "Pantalla de cocina";
             this.toolTip1.SetToolTip(this.label12, "Kitchen Display for Restaurent Item");
             // 
             // dtpurchaseDate
@@ -408,7 +408,7 @@
             this.btnPurchaseHistory.Name = "btnPurchaseHistory";
             this.btnPurchaseHistory.Size = new System.Drawing.Size(127, 30);
             this.btnPurchaseHistory.TabIndex = 95;
-            this.btnPurchaseHistory.Text = "Purchase History";
+            this.btnPurchaseHistory.Text = "Historial de compras";
             this.btnPurchaseHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip1.SetToolTip(this.btnPurchaseHistory, "Submit to Purchase History");
             this.btnPurchaseHistory.UseVisualStyleBackColor = false;
@@ -427,7 +427,7 @@
             this.btnsavevolumepricing.Name = "btnsavevolumepricing";
             this.btnsavevolumepricing.Size = new System.Drawing.Size(127, 69);
             this.btnsavevolumepricing.TabIndex = 96;
-            this.btnsavevolumepricing.Text = "Save Volume Pricing";
+            this.btnsavevolumepricing.Text = "Ahorre precios por volumen";
             this.btnsavevolumepricing.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip1.SetToolTip(this.btnsavevolumepricing, "Submit to Purchase History");
             this.btnsavevolumepricing.UseVisualStyleBackColor = false;
@@ -506,9 +506,9 @@
             this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label9.Location = new System.Drawing.Point(472, 57);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(126, 16);
+            this.label9.Size = new System.Drawing.Size(141, 16);
             this.label9.TabIndex = 68;
-            this.label9.Text = "Regular Discount %";
+            this.label9.Text = "Descuento habitual  %";
             // 
             // label10
             // 
@@ -516,9 +516,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(473, 156);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 13);
+            this.label10.Size = new System.Drawing.Size(145, 13);
             this.label10.TabIndex = 70;
-            this.label10.Text = "Assign Shop Location *";
+            this.label10.Text = "Asignar ubicación de tienda *";
             // 
             // label11
             // 
@@ -527,9 +527,9 @@
             this.label11.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label11.Location = new System.Drawing.Point(628, 50);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 26);
+            this.label11.Size = new System.Drawing.Size(69, 13);
             this.label11.TabIndex = 71;
-            this.label11.Text = "TPS/TVQ\r\nVAT/TAX/ Apply ";
+            this.label11.Text = "ITBIS/ Aplica ";
             // 
             // lblValidmsg
             // 
@@ -612,7 +612,7 @@
             this.grpboxvolumepricing.Size = new System.Drawing.Size(460, 166);
             this.grpboxvolumepricing.TabIndex = 78;
             this.grpboxvolumepricing.TabStop = false;
-            this.grpboxvolumepricing.Text = "Volume pricing";
+            this.grpboxvolumepricing.Text = "Precios por volumen";
             // 
             // label21
             // 
@@ -620,9 +620,9 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(216, 133);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 15);
+            this.label21.Size = new System.Drawing.Size(185, 15);
             this.label21.TabIndex = 87;
-            this.label21.Text = "% off each item";
+            this.label21.Text = "% de descuento en cada artículo";
             // 
             // cmbodisrate4
             // 
@@ -693,9 +693,9 @@
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(9, 133);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(138, 15);
+            this.label22.Size = new System.Drawing.Size(145, 15);
             this.label22.TabIndex = 85;
-            this.label22.Text = "Buy 4 or more and save ";
+            this.label22.Text = "Compre 4 o más y ahorre";
             // 
             // label19
             // 
@@ -703,9 +703,9 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(216, 106);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 15);
+            this.label19.Size = new System.Drawing.Size(185, 15);
             this.label19.TabIndex = 84;
-            this.label19.Text = "% off each item";
+            this.label19.Text = "% de descuento en cada artículo";
             // 
             // cmbodisrate3
             // 
@@ -777,9 +777,9 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(9, 106);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(138, 15);
+            this.label20.Size = new System.Drawing.Size(145, 15);
             this.label20.TabIndex = 82;
-            this.label20.Text = "Buy 3 or more and save ";
+            this.label20.Text = "Compre 3 o más y ahorre";
             // 
             // label18
             // 
@@ -787,9 +787,9 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(216, 79);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 15);
+            this.label18.Size = new System.Drawing.Size(185, 15);
             this.label18.TabIndex = 81;
-            this.label18.Text = "% off each item";
+            this.label18.Text = "% de descuento en cada artículo";
             // 
             // cmbodisrate2
             // 
@@ -862,9 +862,9 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(9, 79);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 15);
+            this.label17.Size = new System.Drawing.Size(148, 15);
             this.label17.TabIndex = 79;
-            this.label17.Text = "Buy 2 or more and save ";
+            this.label17.Text = "Compre 2 o más y ahorre ";
             // 
             // lblbuyqty1
             // 
@@ -872,20 +872,20 @@
             this.lblbuyqty1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbuyqty1.Location = new System.Drawing.Point(9, 54);
             this.lblbuyqty1.Name = "lblbuyqty1";
-            this.lblbuyqty1.Size = new System.Drawing.Size(67, 15);
+            this.lblbuyqty1.Size = new System.Drawing.Size(107, 15);
             this.lblbuyqty1.TabIndex = 78;
-            this.lblbuyqty1.Text = "Buy 1 item:";
+            this.lblbuyqty1.Text = "Compra 1 artículo:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(5, 18);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(403, 26);
+            this.label16.Size = new System.Drawing.Size(438, 26);
             this.label16.TabIndex = 77;
-            this.label16.Text = "Offer a discount when a buyer Purchases more than one item at a time from a singl" +
-    "e \r\n                                                        multiple-quantity li" +
-    "sting.";
+            this.label16.Text = "Ofrecer un descuento cuando un comprador compra más de un artículo a la vez de un" +
+    " solo\n                                                         listado de cantid" +
+    "ades múltiples.";
             // 
             // grpboxPurchasehistory
             // 
@@ -902,7 +902,7 @@
             this.grpboxPurchasehistory.Size = new System.Drawing.Size(460, 95);
             this.grpboxPurchasehistory.TabIndex = 76;
             this.grpboxPurchasehistory.TabStop = false;
-            this.grpboxPurchasehistory.Text = "Add To Purchase History";
+            this.grpboxPurchasehistory.Text = "Agregar al historial de compras";
             this.grpboxPurchasehistory.Visible = false;
             // 
             // label15
@@ -912,9 +912,9 @@
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label15.Location = new System.Drawing.Point(6, 70);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(192, 12);
+            this.label15.Size = new System.Drawing.Size(262, 12);
             this.label15.TabIndex = 96;
-            this.label15.Text = "* Qty will be Auto update to your current stock";
+            this.label15.Text = "* La cantidad se actualizará automáticamente a su stock actual";
             // 
             // label14
             // 
@@ -923,18 +923,18 @@
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label14.Location = new System.Drawing.Point(148, 22);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(151, 13);
+            this.label14.Size = new System.Drawing.Size(192, 13);
             this.label14.TabIndex = 94;
-            this.label14.Text = "New Purchase Quantity (Qty) *";
+            this.label14.Text = "Cantidad de compra nueva (cantidad) *";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(6, 22);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(103, 13);
+            this.label13.Size = new System.Drawing.Size(122, 13);
             this.label13.TabIndex = 92;
-            this.label13.Text = "New Purchase Date";
+            this.label13.Text = "Nueva fecha de compra";
             // 
             // lnkSupplier
             // 
@@ -943,10 +943,10 @@
             this.lnkSupplier.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkSupplier.Location = new System.Drawing.Point(14, 40);
             this.lnkSupplier.Name = "lnkSupplier";
-            this.lnkSupplier.Size = new System.Drawing.Size(65, 16);
+            this.lnkSupplier.Size = new System.Drawing.Size(87, 16);
             this.lnkSupplier.TabIndex = 5;
             this.lnkSupplier.TabStop = true;
-            this.lnkSupplier.Text = "Suppliers";
+            this.lnkSupplier.Text = "Proveedores";
             this.lnkSupplier.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSupplier_LinkClicked);
             // 
             // lnkcategories
@@ -959,7 +959,7 @@
             this.lnkcategories.Size = new System.Drawing.Size(74, 16);
             this.lnkcategories.TabIndex = 3;
             this.lnkcategories.TabStop = true;
-            this.lnkcategories.Text = "Categories";
+            this.lnkcategories.Text = "Categorías";
             this.lnkcategories.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkcategories_LinkClicked);
             // 
             // lnkbulkitems
@@ -969,10 +969,10 @@
             this.lnkbulkitems.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkbulkitems.Location = new System.Drawing.Point(14, 63);
             this.lnkbulkitems.Name = "lnkbulkitems";
-            this.lnkbulkitems.Size = new System.Drawing.Size(109, 16);
+            this.lnkbulkitems.Size = new System.Drawing.Size(129, 16);
             this.lnkbulkitems.TabIndex = 1;
             this.lnkbulkitems.TabStop = true;
-            this.lnkbulkitems.Text = "Bulk items import";
+            this.lnkbulkitems.Text = "Imp de artíc a granel";
             this.lnkbulkitems.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkbulkitems_LinkClicked);
             // 
             // lnkStocklist
@@ -982,10 +982,10 @@
             this.lnkStocklist.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkStocklist.Location = new System.Drawing.Point(14, 85);
             this.lnkStocklist.Name = "lnkStocklist";
-            this.lnkStocklist.Size = new System.Drawing.Size(65, 16);
+            this.lnkStocklist.Size = new System.Drawing.Size(73, 16);
             this.lnkStocklist.TabIndex = 0;
             this.lnkStocklist.TabStop = true;
-            this.lnkStocklist.Text = "Stock List";
+            this.lnkStocklist.Text = "Stock Lista";
             this.lnkStocklist.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkStocklist_LinkClicked);
             // 
             // Add_Item
@@ -1002,7 +1002,7 @@
             this.Name = "Add_Item";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add New item";
+            this.Text = "Agregar ítem nuevo";
             this.Load += new System.EventHandler(this.Add_Item_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picItemimage)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);

@@ -166,7 +166,7 @@ namespace supershop.Customer
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Delete all records?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result = MessageBox.Show("Do you want to Delete all records?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             if (result == DialogResult.Yes)
             { 
@@ -175,7 +175,7 @@ namespace supershop.Customer
                     string sql = "delete from tbl_customer where  id != '10000009'";
                     DataAccess.ExecuteSQL(sql);                    
 
-                    MessageBox.Show("Has been Deleted", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Has been Deleted", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     Databind();
 
                 }

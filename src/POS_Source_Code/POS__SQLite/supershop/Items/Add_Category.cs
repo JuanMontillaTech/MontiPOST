@@ -31,7 +31,7 @@ namespace supershop.Items
         }
         public string categoryName
         {
-            set { txtCategoryName.Text = value; btnSave.Text = "Update"; }
+            set { txtCategoryName.Text = value; btnSave.Text = "Actualizar"; }
             get { return txtCategoryName.Text; }
         }
 
@@ -59,7 +59,7 @@ namespace supershop.Items
             {
                  if (txtCategoryName.Text == "") 
                  { 
-                     MessageBox.Show("Please Fill  Category Name"); 
+                     MessageBox.Show("Complete el nombre de la categoría"); 
                      txtCategoryName.Focus(); 
                  }
                 else
@@ -70,7 +70,7 @@ namespace supershop.Items
                          DataAccess.ExecuteSQL(sqlCmd);
                          txtCategoryName.Text = "";
                          lblMsg.Visible = true;
-                         lblMsg.Text = "Successfully saved";
+                         lblMsg.Text = "Guardado con éxito";
 
                      }
                      else  //Update 
@@ -90,7 +90,7 @@ namespace supershop.Items
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Sorry\r\n this id already added \n\n " + exp.Message);
+                MessageBox.Show("Lo siento\r\n esta identificación ya se agregó \n\n " + exp.Message);
             }
         }
     }

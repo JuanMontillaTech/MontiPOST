@@ -627,7 +627,7 @@ namespace supershop
            }
 
            File.WriteAllText(destFile , csv);
-           MessageBox.Show(" Successfully Exported !!! ", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           MessageBox.Show(" Successfully Exported !!! ", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }   
        
@@ -687,7 +687,7 @@ namespace supershop
             // Get file name.
             string name = saveFileDialog1.FileName;
             File.WriteAllText(name, csv);
-          //  MessageBox.Show(" Successfully Exported !!! ", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+          //  MessageBox.Show(" Successfully Exported !!! ", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
               

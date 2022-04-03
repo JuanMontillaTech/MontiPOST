@@ -50,7 +50,7 @@ namespace supershop
                  {
                      if (txtfilepath.Text == string.Empty)
                      {
-                         MessageBox.Show("Please Select Database file first", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                         MessageBox.Show("Please Select Database file first", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                          txtfilepath.Focus();
                      }
                      else
@@ -72,7 +72,7 @@ namespace supershop
                                  System.IO.File.Copy(txtfilepath.Text, targetPath + @"\" + Newfile);
                              }
 
-                             MessageBox.Show("Database has been succefully Resotred", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                             MessageBox.Show("Database has been succefully Resotred", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                          }
                      
                      }

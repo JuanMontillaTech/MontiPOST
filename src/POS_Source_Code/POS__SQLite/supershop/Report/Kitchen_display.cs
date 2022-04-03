@@ -168,7 +168,7 @@ namespace supershop.Report
             {
                 foreach (DataGridViewRow row2 in dtgridKitchenWaitingList.SelectedRows)
                 {
-                  //  DialogResult result = MessageBox.Show("Are you sure this item ready to Serve?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                  //  DialogResult result = MessageBox.Show("Are you sure this item ready to Serve?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                    // if (result == DialogResult.Yes)
                    // {
                         DataGridViewRow row = dtgridKitchenWaitingList.Rows[e.RowIndex];
@@ -180,7 +180,7 @@ namespace supershop.Report
                         DataAccess.ExecuteSQL(sql);
                         DataTable dt1 = DataAccess.GetDataTable(sql);
                         kitchen_displayDataload();
-                    //    MessageBox.Show("Item has been Served", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button2); ;
+                    //    MessageBox.Show("Item has been Served", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button2); ;
                    // }
                 } 
             }

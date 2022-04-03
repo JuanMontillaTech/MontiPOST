@@ -415,7 +415,7 @@ namespace supershop.Inventory
                 {
                     foreach (DataGridViewRow row2 in dgrvSalesItemList.SelectedRows)
                     {
-                       // DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                       // DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                         //if (result == DialogResult.Yes)
                         //{
@@ -831,7 +831,7 @@ namespace supershop.Inventory
         // Save and Complete Sales
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Complete Sale and Print?  ", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result = MessageBox.Show("Do you want to Complete Sale and Print?  ", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             if (result == DialogResult.Yes)
             {
@@ -841,7 +841,7 @@ namespace supershop.Inventory
                 }
                 //else if (Convert.ToInt32(txtinvoiceNo.Text) >= 53)  //Please uncommet this section
                 //{
-                //    MessageBox.Show("Sorry ! Demo version has limited transaction \n Please buy it \n contact at : citkar@live.com", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                //    MessageBox.Show("Sorry ! Demo version has limited transaction \n Please buy it \n contact at : citkar@live.com", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 //}
                 else if (CmbWarehouse.Text == string.Empty)
                 {

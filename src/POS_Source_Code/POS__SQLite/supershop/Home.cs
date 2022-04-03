@@ -482,7 +482,7 @@ namespace supershop
                 MessageBox.Show("Your Backup is Created !!! ... \n " +
                                 "Please check  your Desktop And \n Keep --posBackup-- File In your Secure folder. " +
                                 "\n You should try to keep  the File  " +
-                                "\n If File is not Appear Please Show hidden files; From the Folder Option  ", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                "\n If File is not Appear Please Show hidden files; From the Folder Option  ", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             }

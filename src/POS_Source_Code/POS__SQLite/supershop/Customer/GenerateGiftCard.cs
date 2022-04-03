@@ -52,7 +52,7 @@ namespace supershop.Customer
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Sorry\r\n this id already added \n\n " + exp.Message);
+                MessageBox.Show("Lo siento\r\n esta identificación ya se agregó \n\n " + exp.Message);
             }
         }
 
@@ -88,7 +88,7 @@ namespace supershop.Customer
                 DataGridViewRow row = dtgviewgiftcard.Rows[e.RowIndex];
                 string serialno = row.Cells[1].Value.ToString();
 
-                DialogResult result = MessageBox.Show("Do you want to Delete this record?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                DialogResult result = MessageBox.Show("Do you want to Delete this record?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                 if (result == DialogResult.Yes)
                 {
@@ -97,7 +97,7 @@ namespace supershop.Customer
                         string sql = " delete  from  tbl_giftcardgenerate  where  serialno = '" + serialno  + "' ";
                         DataAccess.ExecuteSQL(sql);
 
-                        MessageBox.Show("Has been deleted", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Has been deleted", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         GiftCard();
 
                     }

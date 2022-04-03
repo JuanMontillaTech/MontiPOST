@@ -20,7 +20,7 @@ namespace supershop.Data_Manage
         {
             try
             {
-                 DialogResult result = MessageBox.Show("Do you want Reset Database ? \n you will be loss all Data", "YES or NO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                 DialogResult result = MessageBox.Show("Do you want Reset Database ? \n you will be loss all Data", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                  if (result == DialogResult.Yes)
                  {
                      if (rdbsqlite.Checked == true)

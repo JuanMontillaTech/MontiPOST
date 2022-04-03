@@ -141,7 +141,7 @@ namespace supershop
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Sorry\r\n this id already added \n Duplicate value \n  " + exp.Message);
+                MessageBox.Show("Lo siento\r\n esta identificación ya se agregó \n Duplicate value \n  " + exp.Message);
             }
              
 

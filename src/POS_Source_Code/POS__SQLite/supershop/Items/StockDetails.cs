@@ -53,7 +53,7 @@ namespace supershop.Items
                 DataAccess.ExecuteSQL(sql);
                 DataTable dt1 = DataAccess.GetDataTable(sql);
                 datagridItemList.DataSource = dt1;
-                lblRow.Text = "Total item :" + datagridItemList.Rows.Count.ToString();
+                lblRow.Text = "Total Articulos :" + datagridItemList.Rows.Count.ToString();
             }
             catch
             {
@@ -93,7 +93,7 @@ namespace supershop.Items
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.FileName = "StockDetails_" + DateTime.Now.ToString("yyyy-MM-dd_hh-mm-ss") + ".csv";
+            saveFileDialog1.FileName = "StockDetalles_" + DateTime.Now.ToString("yyyy-MM-dd_hh-mm-ss") + ".csv";
             saveFileDialog1.ShowDialog();
         }
 
@@ -125,7 +125,7 @@ namespace supershop.Items
             }
 
             //Exporting to CSV.           
-            string fileName = "StockDetails_" + DateTime.Now.ToString("yyyy-MM-dd_hh-mm-ss") + ".csv";
+            string fileName = "StockDetalles_" + DateTime.Now.ToString("yyyy-MM-dd_hh-mm-ss") + ".csv";
             string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string destFile = System.IO.Path.Combine(targetPath, fileName);
 

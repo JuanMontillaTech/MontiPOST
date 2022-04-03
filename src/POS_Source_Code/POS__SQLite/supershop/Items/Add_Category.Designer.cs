@@ -84,9 +84,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(38, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Category Name   *";
+            this.label1.Text = "Nombre de categoria  *";
             // 
             // txtCategoryName
             // 
@@ -123,7 +123,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(272, 29);
             this.btnSave.TabIndex = 7;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Guardar";
             this.toolTip1.SetToolTip(this.btnSave, "I want to Submit");
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -135,10 +135,10 @@
             this.lnkSupplier.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkSupplier.Location = new System.Drawing.Point(19, 44);
             this.lnkSupplier.Name = "lnkSupplier";
-            this.lnkSupplier.Size = new System.Drawing.Size(65, 16);
+            this.lnkSupplier.Size = new System.Drawing.Size(73, 16);
             this.lnkSupplier.TabIndex = 6;
             this.lnkSupplier.TabStop = true;
-            this.lnkSupplier.Text = "Suppliers";
+            this.lnkSupplier.Text = "Suplidores";
             this.lnkSupplier.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSupplier_LinkClicked);
             // 
             // lnkCategory
@@ -148,10 +148,10 @@
             this.lnkCategory.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkCategory.Location = new System.Drawing.Point(18, 17);
             this.lnkCategory.Name = "lnkCategory";
-            this.lnkCategory.Size = new System.Drawing.Size(74, 16);
+            this.lnkCategory.Size = new System.Drawing.Size(67, 16);
             this.lnkCategory.TabIndex = 0;
             this.lnkCategory.TabStop = true;
-            this.lnkCategory.Text = "Categories";
+            this.lnkCategory.Text = "Categoria";
             this.lnkCategory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCategory_LinkClicked);
             // 
             // toolTip1
@@ -174,7 +174,7 @@
             this.Name = "Add_Category";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add New Category";
+            this.Text = "Agregar nueva categoria";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

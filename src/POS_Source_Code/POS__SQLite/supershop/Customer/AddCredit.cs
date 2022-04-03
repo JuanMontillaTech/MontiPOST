@@ -65,7 +65,7 @@ namespace supershop.Customer
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Sorry\r\n this id already added \n\n " + exp.Message);
+                MessageBox.Show("Lo siento\r\n esta identificación ya se agregó \n\n " + exp.Message);
             }
         }
 

@@ -100,7 +100,7 @@ namespace supershop
                                                 " '" + remainingdeu + "', '" + txtReceive.Text + "', '" + lbcontact.Text + "') ";                                                
                         DataAccess.ExecuteSQL(sqlreceivedue);
 
-                        MessageBox.Show("Successfully Data Updated!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully Data Updated!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txtReceive.Text = string.Empty;
 
 

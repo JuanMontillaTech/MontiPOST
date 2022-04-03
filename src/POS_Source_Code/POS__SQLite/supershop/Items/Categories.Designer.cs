@@ -58,10 +58,10 @@
             this.lnkAddcategory.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkAddcategory.Location = new System.Drawing.Point(18, 17);
             this.lnkAddcategory.Name = "lnkAddcategory";
-            this.lnkAddcategory.Size = new System.Drawing.Size(91, 16);
+            this.lnkAddcategory.Size = new System.Drawing.Size(107, 16);
             this.lnkAddcategory.TabIndex = 0;
             this.lnkAddcategory.TabStop = true;
-            this.lnkAddcategory.Text = "Add Category";
+            this.lnkAddcategory.Text = "Añadir categoría";
             this.lnkAddcategory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAddcategory_LinkClicked);
             // 
             // lnkSupplier
@@ -71,10 +71,10 @@
             this.lnkSupplier.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkSupplier.Location = new System.Drawing.Point(19, 44);
             this.lnkSupplier.Name = "lnkSupplier";
-            this.lnkSupplier.Size = new System.Drawing.Size(65, 16);
+            this.lnkSupplier.Size = new System.Drawing.Size(87, 16);
             this.lnkSupplier.TabIndex = 6;
             this.lnkSupplier.TabStop = true;
-            this.lnkSupplier.Text = "Suppliers";
+            this.lnkSupplier.Text = "Proveedores";
             this.lnkSupplier.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSupplier_LinkClicked);
             // 
             // splitContainer1
@@ -142,7 +142,7 @@
             this.Name = "Categories";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Categories";
+            this.Text = "Categorías";
             this.Load += new System.EventHandler(this.Categories_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

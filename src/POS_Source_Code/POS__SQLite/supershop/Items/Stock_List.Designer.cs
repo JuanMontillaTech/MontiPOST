@@ -40,6 +40,7 @@
             this.btnChart = new System.Windows.Forms.Button();
             this.combCategory = new System.Windows.Forms.ComboBox();
             this.bntStock = new System.Windows.Forms.Button();
+            this.btnpurchasehistory = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCreateBarcode = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.lblRows = new System.Windows.Forms.Label();
             this.btnAddNew = new System.Windows.Forms.Button();
-            this.btnpurchasehistory = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCloseEvent)).BeginInit();
             this.panel3.SuspendLayout();
@@ -70,9 +70,9 @@
             this.label6.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.label6.Location = new System.Drawing.Point(15, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 14);
+            this.label6.Size = new System.Drawing.Size(112, 14);
             this.label6.TabIndex = 33;
-            this.label6.Text = "Search Product";
+            this.label6.Text = "Buscar producto";
             // 
             // panel1
             // 
@@ -93,9 +93,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.Location = new System.Drawing.Point(8, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 23);
+            this.label5.Size = new System.Drawing.Size(131, 23);
             this.label5.TabIndex = 42;
-            this.label5.Text = "Stock Item";
+            this.label5.Text = "Stock Artículo";
             // 
             // picCloseEvent
             // 
@@ -135,11 +135,11 @@
             this.btnChart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.btnChart.Image = ((System.Drawing.Image)(resources.GetObject("btnChart.Image")));
-            this.btnChart.Location = new System.Drawing.Point(981, 515);
+            this.btnChart.Location = new System.Drawing.Point(886, 505);
             this.btnChart.Name = "btnChart";
-            this.btnChart.Size = new System.Drawing.Size(55, 56);
+            this.btnChart.Size = new System.Drawing.Size(149, 56);
             this.btnChart.TabIndex = 10;
-            this.btnChart.Text = "Chart";
+            this.btnChart.Text = "Gráfico";
             this.btnChart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolTip1.SetToolTip(this.btnChart, "Buying and Sale Rate Comparison");
             this.btnChart.UseVisualStyleBackColor = true;
@@ -162,15 +162,31 @@
             this.bntStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.bntStock.Image = ((System.Drawing.Image)(resources.GetObject("bntStock.Image")));
-            this.bntStock.Location = new System.Drawing.Point(657, 515);
+            this.bntStock.Location = new System.Drawing.Point(450, 505);
             this.bntStock.Name = "bntStock";
-            this.bntStock.Size = new System.Drawing.Size(118, 56);
+            this.bntStock.Size = new System.Drawing.Size(149, 56);
             this.bntStock.TabIndex = 153;
-            this.bntStock.Text = "Stock Details";
+            this.bntStock.Text = "Stock Detalles";
             this.bntStock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolTip1.SetToolTip(this.bntStock, "Stock details: Item quantity alert");
             this.bntStock.UseVisualStyleBackColor = true;
             this.bntStock.Click += new System.EventHandler(this.bntStock_Click);
+            // 
+            // btnpurchasehistory
+            // 
+            this.btnpurchasehistory.FlatAppearance.BorderSize = 0;
+            this.btnpurchasehistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpurchasehistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btnpurchasehistory.Image = ((System.Drawing.Image)(resources.GetObject("btnpurchasehistory.Image")));
+            this.btnpurchasehistory.Location = new System.Drawing.Point(282, 505);
+            this.btnpurchasehistory.Name = "btnpurchasehistory";
+            this.btnpurchasehistory.Size = new System.Drawing.Size(149, 56);
+            this.btnpurchasehistory.TabIndex = 154;
+            this.btnpurchasehistory.Text = "Historial de compras";
+            this.btnpurchasehistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip1.SetToolTip(this.btnpurchasehistory, "Purchase history: Item purchase records");
+            this.btnpurchasehistory.UseVisualStyleBackColor = true;
+            this.btnpurchasehistory.Click += new System.EventHandler(this.btnpurchasehistory_Click);
             // 
             // panel2
             // 
@@ -187,11 +203,11 @@
             this.btnCreateBarcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateBarcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.btnCreateBarcode.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateBarcode.Image")));
-            this.btnCreateBarcode.Location = new System.Drawing.Point(1047, 510);
+            this.btnCreateBarcode.Location = new System.Drawing.Point(1006, 505);
             this.btnCreateBarcode.Name = "btnCreateBarcode";
-            this.btnCreateBarcode.Size = new System.Drawing.Size(126, 61);
+            this.btnCreateBarcode.Size = new System.Drawing.Size(149, 56);
             this.btnCreateBarcode.TabIndex = 9;
-            this.btnCreateBarcode.Text = "Create Barcode";
+            this.btnCreateBarcode.Text = "CrearBarcode";
             this.btnCreateBarcode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCreateBarcode.UseVisualStyleBackColor = true;
             this.btnCreateBarcode.Click += new System.EventHandler(this.btnCreateBarcode_Click);
@@ -206,11 +222,11 @@
             this.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.btnImport.Image = ((System.Drawing.Image)(resources.GetObject("btnImport.Image")));
-            this.btnImport.Location = new System.Drawing.Point(869, 515);
+            this.btnImport.Location = new System.Drawing.Point(754, 505);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(102, 58);
+            this.btnImport.Size = new System.Drawing.Size(149, 56);
             this.btnImport.TabIndex = 56;
-            this.btnImport.Text = "Import Item";
+            this.btnImport.Text = "Importar artículo";
             this.btnImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnImport.UseVisualStyleBackColor = false;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
@@ -238,9 +254,9 @@
             this.label24.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.label24.Location = new System.Drawing.Point(835, 34);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(112, 14);
+            this.label24.Size = new System.Drawing.Size(175, 14);
             this.label24.TabIndex = 149;
-            this.label24.Text = "Select Category";
+            this.label24.Text = "Selecciona una categoría";
             // 
             // lblRows
             // 
@@ -261,30 +277,14 @@
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.btnAddNew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNew.Image")));
-            this.btnAddNew.Location = new System.Drawing.Point(781, 515);
+            this.btnAddNew.Location = new System.Drawing.Point(599, 505);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(73, 56);
+            this.btnAddNew.Size = new System.Drawing.Size(149, 56);
             this.btnAddNew.TabIndex = 152;
-            this.btnAddNew.Text = "Add New ";
+            this.btnAddNew.Text = "Agregar nuevo";
             this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAddNew.UseVisualStyleBackColor = false;
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
-            // 
-            // btnpurchasehistory
-            // 
-            this.btnpurchasehistory.FlatAppearance.BorderSize = 0;
-            this.btnpurchasehistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpurchasehistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.btnpurchasehistory.Image = ((System.Drawing.Image)(resources.GetObject("btnpurchasehistory.Image")));
-            this.btnpurchasehistory.Location = new System.Drawing.Point(533, 516);
-            this.btnpurchasehistory.Name = "btnpurchasehistory";
-            this.btnpurchasehistory.Size = new System.Drawing.Size(118, 56);
-            this.btnpurchasehistory.TabIndex = 154;
-            this.btnpurchasehistory.Text = "Purchase History";
-            this.btnpurchasehistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolTip1.SetToolTip(this.btnpurchasehistory, "Purchase history: Item purchase records");
-            this.btnpurchasehistory.UseVisualStyleBackColor = true;
-            this.btnpurchasehistory.Click += new System.EventHandler(this.btnpurchasehistory_Click);
             // 
             // Stock_List
             // 

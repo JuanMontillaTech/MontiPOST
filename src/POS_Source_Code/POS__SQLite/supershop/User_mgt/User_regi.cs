@@ -123,7 +123,7 @@ namespace supershop.User_mgt
                     loadData(lblUid.Text);
                     txtUsername.Enabled = false;
                     btnSave.Enabled = true;
-                    btnSave.Text = "Update";
+                    btnSave.Text = "Actualizar";
                     lnkDelete.Visible = true;
                 }
                 else
@@ -261,7 +261,7 @@ namespace supershop.User_mgt
                         string filename = path + @"\" + openFileDialog1.SafeFileName;
                         picUserimage.Image.Save(filename, System.Drawing.Imaging.ImageFormat.Png);
                         System.IO.File.Move(path + @"\" + openFileDialog1.SafeFileName, path + @"\" + imageName);
-                        MessageBox.Show("User hase been Created Successfully", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("User hase been Created Successfully", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         lblEmailerrormsg.Visible = false;
 
                         User_mgt.Manage_user go = new User_mgt.Manage_user();
@@ -301,7 +301,7 @@ namespace supershop.User_mgt
                             System.IO.File.Move(path + @"\" + openFileDialog1.SafeFileName, path + @"\" + imageName);
                         }
      
-                        MessageBox.Show("Successfully Data Updated!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully Data Updated!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         lblEmailerrormsg.Visible = false;
                         loadData(lblUid.Text);
                     }
@@ -409,7 +409,7 @@ namespace supershop.User_mgt
         //// Delete user
         private void lnkDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             if (result == DialogResult.Yes)
             {
@@ -417,7 +417,7 @@ namespace supershop.User_mgt
                 if (lblUid.Text == "-")
                 {
                     // MessageBox.Show("You are Not able to Update");
-                    MessageBox.Show("You are Not able to Delete", "Button3 Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("No puedes eliminar", "Button3 Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -430,7 +430,7 @@ namespace supershop.User_mgt
                         string path = Application.StartupPath + @"\IMAGE\";
                         System.IO.File.Delete(path + @"\" + lblimagename.Text);
 
-                        MessageBox.Show("User has been Deleted", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);                  
+                        MessageBox.Show("User has been Deleted", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);                  
                         User_mgt.Manage_user go = new User_mgt.Manage_user();
                         go.MdiParent = this.ParentForm;
                         go.Show();

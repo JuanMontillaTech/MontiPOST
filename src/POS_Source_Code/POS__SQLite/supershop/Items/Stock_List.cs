@@ -33,7 +33,7 @@ namespace supershop
                 " OR (category = '" + value + "')  ";
                 DataAccess.ExecuteSQL(sql);
                 DataTable dt = DataAccess.GetDataTable(sql);
-                lblRows.Text =  "Total Rows " + dt.Rows.Count.ToString() + " Found";
+                lblRows.Text =  "Total registros " + dt.Rows.Count.ToString() + " Encontrado";
 
                 int currentImage = 0;
 
@@ -49,7 +49,7 @@ namespace supershop
                     string taxapply;
                     if (dataReader["taxapply"].ToString() == "1")
                     {
-                        taxapply = "YES";
+                        taxapply = "SI";
                     }
                     else
                     {
@@ -59,7 +59,7 @@ namespace supershop
                     string KitchenDisplay;
                     if (dataReader["status"].ToString() == "3")
                     {
-                        KitchenDisplay = "YES";
+                        KitchenDisplay = "SI";
                     }
                     else
                     {
@@ -69,19 +69,19 @@ namespace supershop
                     string details =
                         "====================================" +
                         "\n ID: " + dataReader["product_id"]  +
-                        "\n Name: " + dataReader["product_name"].ToString() +
-                        "\n Buy price: " + dataReader["cost_price"].ToString() + 
-                        "\n Stock Qty: " + dataReader["product_quantity"].ToString() + 
-                        "\n Retail price: " + dataReader["retail_price"].ToString() +
-                        "\n Discount: " + dataReader["discount"].ToString() + "%" +
-                        "\n Category: " + dataReader["category"].ToString() +
-                        "\n Supplier: " + dataReader["supplier"].ToString() +
-                        "\n Branch: " + dataReader["Shopid"].ToString() +
-                        "\n Tax Apply: " + taxapply +
-                        "\n Kitchen Display  : " + KitchenDisplay +
+                        "\n Nombre: " + dataReader["product_name"].ToString() +
+                        "\n Precio de compra: " + dataReader["cost_price"].ToString() +
+                        "\n Cantidad de existencias: " + dataReader["product_quantity"].ToString() +
+                        "\n Precio al por menor: " + dataReader["retail_price"].ToString() +
+                        "\n Descuento: " + dataReader["discount"].ToString() + "%" +
+                        "\n Categoría: " + dataReader["category"].ToString() +
+                        "\n Proveedor: " + dataReader["supplier"].ToString() +
+                        "\n Rama: " + dataReader["Shopid"].ToString() +
+                        "\n Aplicar impuestos: " + taxapply +
+                        "\n Pantalla de cocina  : " + KitchenDisplay +
                         "\n ====================================";
                     b.Name =  details;
-                    toolTip1.ToolTipTitle = "Item Details";
+                    toolTip1.ToolTipTitle = "Detalles del artículo";
                     toolTip1.AutoPopDelay = 32766;
                     toolTip1.SetToolTip(b, details);
 
@@ -111,10 +111,10 @@ namespace supershop
                     
                     b.Text += " " + dataReader["product_id"] + "\n ";
                     b.Text += dataReader["product_name"].ToString();
-                    b.Text += "\n Buy: " + dataReader["cost_price"];
+                    b.Text += "\n Comprar: " + dataReader["cost_price"];
                     b.Text += "\n Stock: " + dataReader["product_quantity"];
-                    b.Text += "\n R.Price: " + dataReader["retail_price"];
-                    b.Text += "\n Dis: " + dataReader["discount"] + "% Tax: " + taxapply;
+                    b.Text += "\n P.Menor: " + dataReader["retail_price"];
+                    b.Text += "\n Des: " + dataReader["discount"] + "% Tax: " + taxapply;
                     
                     b.Font = new Font("Arial", 9, FontStyle.Bold, GraphicsUnit.Point);
                     b.TextAlign = ContentAlignment.TopLeft;

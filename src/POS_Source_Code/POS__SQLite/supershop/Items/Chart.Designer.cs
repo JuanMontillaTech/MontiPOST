@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chart));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.printGrid = new System.Windows.Forms.Button();
@@ -47,27 +47,27 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend2";
-            this.chart1.Legends.Add(legend2);
+            legend1.Name = "Legend2";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Label = "#VAL";
-            series3.LabelToolTip = "#VAL";
-            series3.Legend = "Legend2";
-            series3.MarkerSize = 1;
-            series3.Name = "Cost_price";
-            series3.YValuesPerPoint = 4;
-            series4.ChartArea = "ChartArea1";
-            series4.Label = "#VAL";
-            series4.LabelToolTip = "#VAL";
-            series4.Legend = "Legend2";
-            series4.Name = "Retail_price";
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Label = "#VAL";
+            series1.LabelToolTip = "#VAL";
+            series1.Legend = "Legend2";
+            series1.MarkerSize = 1;
+            series1.Name = "Cost_price";
+            series1.YValuesPerPoint = 4;
+            series2.ChartArea = "ChartArea1";
+            series2.Label = "#VAL";
+            series2.LabelToolTip = "#VAL";
+            series2.Legend = "Legend2";
+            series2.Name = "Retail_price";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(1182, 403);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -112,7 +112,7 @@
             // 
             this.combCategory.Font = new System.Drawing.Font("Times New Roman", 9.25F);
             this.combCategory.FormattingEnabled = true;
-            this.combCategory.Location = new System.Drawing.Point(130, 5);
+            this.combCategory.Location = new System.Drawing.Point(191, 5);
             this.combCategory.Name = "combCategory";
             this.combCategory.Size = new System.Drawing.Size(328, 23);
             this.combCategory.TabIndex = 152;
@@ -124,9 +124,9 @@
             this.label24.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.label24.Location = new System.Drawing.Point(12, 9);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(112, 14);
+            this.label24.Size = new System.Drawing.Size(175, 14);
             this.label24.TabIndex = 151;
-            this.label24.Text = "Select Category";
+            this.label24.Text = "selecciona una categoría";
             // 
             // Chart
             // 
@@ -138,7 +138,7 @@
             this.Name = "Chart";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chart";
+            this.Text = "Gráfico";
             this.Load += new System.EventHandler(this.Chart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);

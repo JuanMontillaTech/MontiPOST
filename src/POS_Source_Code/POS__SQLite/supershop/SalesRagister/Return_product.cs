@@ -261,7 +261,7 @@ namespace supershop
 
           private void ReturnSave_Click(object sender, EventArgs e)
           {
-              DialogResult result = MessageBox.Show("Do you want to Complete Return ?\n\n -To change Qty edit Qty cell ", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+              DialogResult result = MessageBox.Show("Do you want to Complete Return ?\n\n -To change Qty edit Qty cell ", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
               if (result == DialogResult.Yes)
               {
@@ -275,7 +275,7 @@ namespace supershop
                       {
                           Return_item();
                         //  SubtractCredit();
-                          MessageBox.Show("Successfully Returned Items  \n   ....... ", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);                         
+                          MessageBox.Show("Successfully Returned Items  \n   ....... ", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);                         
                           ClearForm2();                
 
                       }
@@ -359,7 +359,7 @@ namespace supershop
                   {
                       foreach (DataGridViewRow row2 in dtgrdviewReturnItem.SelectedRows)
                       {
-                          DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                          DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                           if (result == DialogResult.Yes)
                           {

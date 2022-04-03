@@ -130,7 +130,7 @@ namespace supershop
                 {
                     loadData();
                     txtProductCode.ReadOnly = true;
-                    btnSave.Text = "Update";
+                    btnSave.Text = "Actualizar";
                     lnkDelete.Visible = true;
                     grpboxPurchasehistory.Visible = true;                    
                 }             
@@ -149,12 +149,12 @@ namespace supershop
         {
             if (txtProductCode.Text == "" )
             {
-                MessageBox.Show("Please Insert Product Code/ Item Bar-code");
+                MessageBox.Show("Introduzca el código de producto/código de barras del artículo");
                 txtProductCode.Focus();
             } 
             else if (txtProductName.Text == "")
             {
-                MessageBox.Show("Please Insert  Product Name");
+                MessageBox.Show("Por favor, inserte el nombre del producto");
                 txtProductName.Focus();
             }
             else if (txtdiscount.Text == "")
@@ -164,33 +164,33 @@ namespace supershop
             }
             else if (txtProductQty.Text == "")
             {
-                MessageBox.Show("Please Insert Product Quantity");
+                MessageBox.Show("Por favor, introduzca la cantidad del producto");
                 txtProductQty.Focus();
             }
             else if (txtCostPrice.Text == "")
             {
-                MessageBox.Show("Please Insert Product Cost Price / Buy price ");
+                MessageBox.Show("Ingrese el precio de costo del producto / precio de compra");
                 txtCostPrice.Focus();
             }
   
             else if (txtSalesPrice.Text == "")
             {
-                MessageBox.Show("Please Insert Product  Sales Price");
+                MessageBox.Show("Por favor, introduzca el precio de venta del producto");
                 txtSalesPrice.Focus();
             }
             else if (ComboCategory.Text == "")
             {
-                MessageBox.Show("Please Insert Product Category");
+                MessageBox.Show("Por favor, inserte la categoría del producto");
                 ComboCategory.Focus();
             }
             else if (cmboShopid.Text == "")
             {
-                MessageBox.Show("Please Select Branch name ");
+                MessageBox.Show("Seleccione el nombre de la sucursal");
                 cmboShopid.Focus();
             }
             else if (cmbSupplier.Text == "")
             {
-                MessageBox.Show("Please Select Supplier Name");
+                MessageBox.Show("Seleccione el nombre del proveedor");
                 cmbSupplier.Focus();
             }
             else
@@ -252,7 +252,7 @@ namespace supershop
                             System.IO.File.Move(path + @"\" + openFileDialog1.SafeFileName, path + @"\" + imageName);
                      //   }
 
-                        MessageBox.Show("Item has been saved Successfully", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("El artículo ha sido guardado con éxito", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         if (UserInfo.usertype == "1")
                         {
@@ -304,7 +304,7 @@ namespace supershop
                           }
 
 
-                        MessageBox.Show("Successfully Data Updated!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("¡Datos actualizados con éxito!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //loadData();    
                         if (UserInfo.usertype == "1")
                         {
@@ -323,7 +323,7 @@ namespace supershop
                 }
                 catch (Exception exp)
                 {
-                    MessageBox.Show("Sorry\r\n this id already added \n" + exp.Message);
+                    MessageBox.Show("Lo siento\r\n esta identificación ya se agregó \n" + exp.Message);
                 }
             }
             //this.Hide();
@@ -369,7 +369,7 @@ namespace supershop
 
         private void lnkDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             if (result == DialogResult.Yes)
             {
@@ -377,7 +377,7 @@ namespace supershop
                 if (lblItemcode.Text == "-")
                 {
                     // MessageBox.Show("You are Not able to Update");
-                    MessageBox.Show("You are Not able to Delete", "Button3 Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("No puedes eliminar", "Button3 Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -389,7 +389,7 @@ namespace supershop
                         picItemimage.InitialImage.Dispose();
                         string path = Application.StartupPath + @"\ITEMIMAGE\";
                         System.IO.File.Delete(path + @"\" + lblimagename.Text);
-                        MessageBox.Show("Successfully Data Delete !", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("¡Borrado de datos con éxito!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                         Stock_List go = new Stock_List();
                         go.MdiParent = this.ParentForm;
@@ -577,14 +577,14 @@ namespace supershop
                     lblValidmsg.Text = "Duplicate item code";                    
                     if (lblItemcode.Text == "-")
                     {
-                        MessageBox.Show("Warning: Duplicate item code \n Item code already used for another product", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Advertencia: Código de artículo duplicado \n Código de artículo ya utilizado para otro producto", "Advertencia ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     }
                 }
                 else
                 {
                     lblValidmsg.ForeColor = System.Drawing.Color.Black;
-                    lblValidmsg.Text = "Valid code";                 
+                    lblValidmsg.Text = "Valide el codigo";                 
 
                 }
             }
@@ -661,7 +661,7 @@ namespace supershop
             {
                 if (txtNewpQty.Text == "")
                 {
-                    MessageBox.Show("Please Insert Purchase Quantity");
+                    MessageBox.Show("Por favor, introduzca la cantidad de compra");
                     txtNewpQty.Focus();
                 }
                 else
@@ -669,7 +669,7 @@ namespace supershop
                     insertpurchasehistory("OLD", Convert.ToDouble(txtNewpQty.Text), dtpurchaseDate.Text);
                     updatestockqty();
 
-                    DialogResult result = MessageBox.Show("Purchase history hase been saved Successfully. \n\n Do you want to see Purchase history?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
+                    DialogResult result = MessageBox.Show("El historial de compras se ha guardado con éxito. \n\n ¿Quieres ver el historial de compras?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
 
                     if (result == DialogResult.Yes)
                     {
@@ -680,7 +680,7 @@ namespace supershop
                     }
                     else
                     {
-                        // MessageBox.Show("", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // MessageBox.Show("", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         btnPurchaseHistory.Enabled = false;
                     }
                   
@@ -705,22 +705,22 @@ namespace supershop
                 double disrate4 = Convert.ToDouble(cmbodisrate4.Text);
                 if (disrate >= disrate2)
                 {                     
-                    MessageBox.Show("Discount rate should be greater than Regular Discount rate ", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("La tasa de descuento debe ser mayor que la tasa de descuento regular", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cmbodisrate2.Focus();
                 }
                 else if (disrate2 > disrate3)
                 {
-                    MessageBox.Show("Discount rate-3 should be greater than Discount rate-2 ", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("La tasa de descuento-3 debe ser mayor que la tasa de descuento-2", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cmbodisrate3.Focus();
                 }
                 else if (disrate3 > disrate4)
                 {
-                    MessageBox.Show("Discount rate-4 should be greater than Discount rate-3 ", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("La tasa de descuento-4 debe ser mayor que la tasa de descuento-3", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cmbodisrate4.Focus();
                 }
                 else if (txtProductCode.Text == "")
                 {
-                    MessageBox.Show("Please Insert Product Code/ Item Bar-code ", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+                    MessageBox.Show("Introduzca el código de producto/código de barras del artículo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
                     txtProductCode.Focus();
                 } 
                 else
@@ -732,7 +732,7 @@ namespace supershop
                         string sql1 = " insert into tbl_multidiscount (product_id, disrate2, disrate3, disrate4) " +
                                       " values ('" + product_id + "','" + cmbodisrate2.Text + "', '" + cmbodisrate3.Text + "', '" + cmbodisrate4.Text + "')";
                         DataAccess.ExecuteSQL(sql1);
-                        MessageBox.Show("Item has been saved Successfully", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("El artículo ha sido guardado con éxito", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -754,7 +754,7 @@ namespace supershop
                             DataAccess.ExecuteSQL(sql1);
                         }
 
-                        MessageBox.Show("Successfully Discount Updated!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("¡Descuento actualizado con éxito!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
                 }

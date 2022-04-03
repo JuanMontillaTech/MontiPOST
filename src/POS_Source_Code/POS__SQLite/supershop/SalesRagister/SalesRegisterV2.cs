@@ -601,7 +601,7 @@ namespace supershop
                 {
                     foreach (DataGridViewRow row2 in dgrvSalesItemList.SelectedRows)
                     {
-                      //  DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                      //  DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                       //  if (result == DialogResult.Yes)
                       //  {
@@ -1015,7 +1015,7 @@ namespace supershop
         {
             if (lblTotalPayable.Text == "00" || lblTotalPayable.Text == "0" || lblTotalPayable.Text == string.Empty)
             {
-                MessageBox.Show("Sorry ! You don't have enough product in Item cart \n  Please Add to cart", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2); 
+                MessageBox.Show("Sorry ! You don't have enough product in Item cart \n  Please Add to cart", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2); 
             }
             else
             {
@@ -1057,7 +1057,7 @@ namespace supershop
         {
             if (lblTotalPayable.Text == "00" || lblTotalPayable.Text == "0" || lblTotalPayable.Text == string.Empty)
             {
-                MessageBox.Show("Sorry ! You don't have enough product in Item cart \n  Please Add to cart", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                MessageBox.Show("Sorry ! You don't have enough product in Item cart \n  Please Add to cart", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             }
             else
             {
@@ -1380,11 +1380,11 @@ namespace supershop
         {            
             if (txtPaidAmount.Text == "00" || txtPaidAmount.Text == "0" || txtPaidAmount.Text == string.Empty)
             {
-                MessageBox.Show("Please insert paid amount. \n  If you want full due transaction \n Please insert 0.00 ", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                MessageBox.Show("Please insert paid amount. \n  If you want full due transaction \n Please insert 0.00 ", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             }
             //else if (Convert.ToInt32(txtInvoice.Text) >= 53)
             //{
-            //    MessageBox.Show("Sorry ! Demo version has limited transaction \n Please buy it \n contact at : citkar@live.com \n https://goo.gl/Hs7XsD", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            //    MessageBox.Show("Sorry ! Demo version has limited transaction \n Please buy it \n contact at : citkar@live.com \n https://goo.gl/Hs7XsD", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             //}
             else
             {
@@ -1419,16 +1419,16 @@ namespace supershop
         //3. Complete sale and Print Preview
         private void btnCompleteSalesAndPrint_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Complete this transaction?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Do you want to Complete this transaction?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 if (txtPaidAmount.Text == "00" || txtPaidAmount.Text == "0" || txtPaidAmount.Text == string.Empty)
                 {
-                    MessageBox.Show("Please insert paid amount. \n  If you want full due transaction \n Please insert 0.00 ", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                    MessageBox.Show("Please insert paid amount. \n  If you want full due transaction \n Please insert 0.00 ", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 }
                 //  else if (Convert.ToInt32(txtInvoice.Text) >= 53)
                 // {
-                //   MessageBox.Show("Sorry ! Demo version has limited transaction \n Please buy it \n contact at : citkar@live.com \n https://goo.gl/Hs7XsD", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                //   MessageBox.Show("Sorry ! Demo version has limited transaction \n Please buy it \n contact at : citkar@live.com \n https://goo.gl/Hs7XsD", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 //  }
                 else
                 {
@@ -1465,12 +1465,12 @@ namespace supershop
         //4 Comlete  sale and direct print
         private void btnPrintDirect_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Complete this transaction and Direct Print?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Do you want to Complete this transaction and Direct Print?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 if (txtPaidAmount.Text == "00" || txtPaidAmount.Text == "0" || txtPaidAmount.Text == string.Empty)
                 {
-                    MessageBox.Show("Please insert paid amount. \n  If you want full due transaction \n Please insert 0.00 ", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                    MessageBox.Show("Please insert paid amount. \n  If you want full due transaction \n Please insert 0.00 ", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 }
                 else
                 {
@@ -1823,7 +1823,7 @@ namespace supershop
                 else
                 {
                     lblavailgiftbalance.Text = giftcardbalancecheck(txtgiftcardserialno.Text).ToString() + " : Total Payable amount is Exceeded.";
-                    MessageBox.Show("The total payable amount exceeds the amount of the gift card.", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                    MessageBox.Show("The total payable amount exceeds the amount of the gift card.", "Sí o no", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 }
             }
             catch

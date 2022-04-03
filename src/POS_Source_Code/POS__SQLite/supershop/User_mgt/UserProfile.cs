@@ -142,7 +142,7 @@ namespace supershop.User_mgt
                         " DOB = '" + dtDOB.Value.ToString("yyyy-MM-dd") + "' , Username= '" + txtUsername.Text + "', password = '" + textUserPass.Text + "' ,   " +
                         " imagename = '" + imageName + "'  where (Username = '" + lblUserName.Text + "' )"; 
                     DataAccess.ExecuteSQL(sql);
-                    MessageBox.Show("Successfully Data Updated!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Successfully Data Updated!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // cleartext();
 

@@ -314,7 +314,7 @@ namespace supershop
 
         private void lnkDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             if (result == DialogResult.Yes)
             {
@@ -322,7 +322,7 @@ namespace supershop
                 if (lblShopID.Text == "-")
                 {
                     // MessageBox.Show("You are Not able to Update");
-                    MessageBox.Show("You are Not able to Delete", "Button3 Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("No puedes eliminar", "Button3 Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -330,7 +330,7 @@ namespace supershop
                     {
                         string sql = "delete from tbl_terminalLocation where Shopid ='" + lblShopID.Text + "'";
                         DataAccess.ExecuteSQL(sql);
-                        MessageBox.Show("successfully Data Delete !", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("¡Borrado de datos con éxito!", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         terminallist();
                         tabControl1.SelectedTab = tabterminallist;
                     

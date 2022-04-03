@@ -33,7 +33,7 @@ namespace supershop
                 DataAccess.ExecuteSQL(sqlcate);
                 DataTable dtcate = DataAccess.GetDataTable(sqlcate);
                 combCategory.DataSource = dtcate;
-                combCategory.DisplayMember = "category";
+                combCategory.DisplayMember = "categoría";
 
                 string sql5 = "select * from purchase where category = '"+ combCategory.Text +"' ";
                 DataAccess.ExecuteSQL(sql5);
@@ -42,8 +42,8 @@ namespace supershop
                 chart1.Visible = true;
                 chart1.ChartAreas[0].AxisX.LabelStyle.Angle = 45;
 
-                chart1.Series[0].LegendText = "Cost Price";
-                chart1.Series[1].LegendText = "Retail Price";
+                chart1.Series[0].LegendText = "Precio de coste";
+                chart1.Series[1].LegendText = "Precio al por menor";
 
                 chart1.Series["Cost_price"].XValueMember = "product_name";
                 chart1.Series["Cost_price"].YValueMembers = "cost_price";
@@ -83,8 +83,8 @@ namespace supershop
             chart1.Visible = true;
             chart1.ChartAreas[0].AxisX.LabelStyle.Angle = 45;
 
-            chart1.Series[0].LegendText = "Cost Price";
-            chart1.Series[1].LegendText = "Retail Price";
+            chart1.Series[0].LegendText = "Precio de coste";
+            chart1.Series[1].LegendText = "Precio al por menor";
 
             chart1.Series["Cost_price"].XValueMember = "product_name";
             chart1.Series["Cost_price"].YValueMembers = "cost_price";

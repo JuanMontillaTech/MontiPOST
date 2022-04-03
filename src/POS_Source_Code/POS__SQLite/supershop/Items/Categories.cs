@@ -49,18 +49,18 @@ namespace supershop.Items
                 categorybind();  
                 DataGridViewButtonColumn Edit = new DataGridViewButtonColumn();
                 datagridcategories.Columns.Add(Edit);
-                Edit.HeaderText = "Edit";
-                Edit.Text = "Edit";
-                Edit.Name = "Edit";
-                Edit.ToolTipText = "Edit this category";
+                Edit.HeaderText = "Editar";
+                Edit.Text = "Editar";
+                Edit.Name = "Editar";
+                Edit.ToolTipText = "Editar esta categoría";
                 Edit.UseColumnTextForButtonValue = true;
 
                 DataGridViewButtonColumn del = new DataGridViewButtonColumn();
                 datagridcategories.Columns.Add(del);
-                del.HeaderText = "Del";
+                del.HeaderText = "eliminar";
                 del.Text = "X";
-                del.Name = "del";
-                del.ToolTipText = "Delete this category";
+                del.Name = "eliminar";
+                del.ToolTipText = "eliminar esta categoría";
                 del.UseColumnTextForButtonValue = true;
 
                 DataGridViewColumn ColID = datagridcategories.Columns[0];
@@ -82,7 +82,7 @@ namespace supershop.Items
                 {
                     foreach (DataGridViewRow rowdel in datagridcategories.SelectedRows)
                     {
-                        DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                        DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                         if (result == DialogResult.Yes)
                         {

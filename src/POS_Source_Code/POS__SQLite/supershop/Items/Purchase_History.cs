@@ -125,7 +125,7 @@ namespace supershop.Items
             if (MyPrintDialog.ShowDialog() != DialogResult.OK)
                 return false;
 
-            printDocument1.DocumentName = "Purchase Report";
+            printDocument1.DocumentName = "Informe de compra";
             printDocument1.PrinterSettings = MyPrintDialog.PrinterSettings;
             printDocument1.DefaultPageSettings = MyPrintDialog.PrinterSettings.DefaultPageSettings;
             printDocument1.DefaultPageSettings.Margins = new Margins(40, 40, 40, 40);
@@ -159,7 +159,7 @@ namespace supershop.Items
             }
             catch (Exception exp)
             {
-                MessageBox.Show("!!! Please Print Preview or Setup Print only for First time " + exp.Message);
+                MessageBox.Show("!!! Por favor, imprima la vista previa o configure la impresión solo por primera vez " + exp.Message);
             }
         }
 
@@ -190,7 +190,7 @@ namespace supershop.Items
                 DataGridViewRow row = datagrdpurchasehistory.Rows[e.RowIndex];
                 if (row.Cells[0].Value.ToString() != string.Empty)
                 {
-                    DialogResult result = MessageBox.Show(" Do you want to delete ?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
+                    DialogResult result = MessageBox.Show(" Do you want to delete ?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         string sql = " update tbl_purchase_history set status = '2' where id ='" + row.Cells[0].Value.ToString() + "'";

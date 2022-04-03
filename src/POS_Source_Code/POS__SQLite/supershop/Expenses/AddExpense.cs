@@ -103,8 +103,8 @@ namespace supershop.Expenses
                         System.IO.File.Copy(copyfile, pastefile);                      
                     }
 
-                    MessageBox.Show("Saved Successfully", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    DialogResult result = MessageBox.Show("Do you want to add a new Expense?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                    MessageBox.Show("Saved Successfully", "Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogResult result = MessageBox.Show("Do you want to add a new Expense?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result == DialogResult.Yes)
                     {
                         txtAmount.Text = string.Empty;

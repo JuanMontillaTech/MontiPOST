@@ -97,7 +97,7 @@ namespace supershop.Expenses
                 {
                     foreach (DataGridViewRow rowdel in datagridExpenses.SelectedRows)
                     {
-                        DialogResult result = MessageBox.Show("Do you want to Delete?", "Yes or No", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                        DialogResult result = MessageBox.Show("¿Quieres borrar?", "Sí o no", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                         if (result == DialogResult.Yes)
                         {

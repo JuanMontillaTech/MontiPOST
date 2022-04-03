@@ -40,7 +40,7 @@ namespace supershop.Customer
             set
             {
                 txtCustomerName.Text = value;
-                btnSave.Text = "Update";
+                btnSave.Text = "Actualizar";
             }
             get
             {
@@ -144,8 +144,8 @@ namespace supershop.Customer
                     {                        
                             string sqlCmd = "insert into tbl_customer (Name, EmailAddress, Phone, address, City, PeopleType )  values ('" + txtCustomerName.Text + "', '" + txtEmailAddress.Text + "', '" + txtPhone.Text + "', '" + txtCustomerAddress.Text + "', '" + txtCity.Text + "', '" + CombPeopleType.Text + "')";
                             DataAccess.ExecuteSQL(sqlCmd);
-                            MessageBox.Show("Successfully saved");
-                            lblMsg.Text = "Successfully saved";
+                            MessageBox.Show("Guardado con éxito");
+                            lblMsg.Text = "Guardado con éxito";
                             clearform();       
                        
                     }
@@ -161,7 +161,7 @@ namespace supershop.Customer
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Sorry\r\n this id already added \n\n " + exp.Message);
+                MessageBox.Show("Lo siento\r\n esta identificación ya se agregó \n\n " + exp.Message);
             }
                   
         }
